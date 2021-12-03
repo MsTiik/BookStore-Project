@@ -71,12 +71,16 @@ returnHomeLink.innerHTML = "Home";
 mainStatus.innerHTML = "ALL Music";
 
 returnHomeLink.setAttribute("onclick", "return_home()");
-
 return_home = () => {
   window.location.href = "index.html";
 };
 
 main.appendChild(returnHomeLink);
 main.appendChild(mainStatus);
+
+// MUSIC GRID ==============================================
+let musicGrid = document.createElement("div");
+musicGrid.className = "music-grid";
+musicGrid.id = "music-grid";
 
 //==========================================================
